@@ -16,7 +16,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windewScene)
         
         let viewController = ViewController()
+        viewController.teaManager = buildTeaManager()
+        
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
+    }
+}
+
+extension SceneDelegate {
+    func buildTeaManager() -> ITeaManager {
+        let teaDataManager: ITeaDataManager = TeaDataManager()
+        let teaManager: ITeaManager = TeaManager()
+        teaManager.addTeas(teaDataManager.getTeas())
+        return teaManager
     }
 }

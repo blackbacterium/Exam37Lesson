@@ -7,11 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    
+    var teaManager: ITeaManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .cyan
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        teaManager.getAllTeas().count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
 
 

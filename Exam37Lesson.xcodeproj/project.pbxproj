@@ -6,30 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5939D6902FE6EA2F0079858D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5939D6862FE6EA2F0079858D /* Assets.xcassets */; };
+		5939D6922FE6EA2F0079858D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5939D68A2FE6EA2F0079858D /* LaunchScreen.storyboard */; };
+		5939D6932FE6EA2F0079858D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D6852FE6EA2F0079858D /* AppDelegate.swift */; };
+		5939D6942FE6EA2F0079858D /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D6872FE6EA2F0079858D /* HorizontalScrollView.swift */; };
+		5939D6952FE6EA2F0079858D /* NestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D68B2FE6EA2F0079858D /* NestedTypes.swift */; };
+		5939D6962FE6EA2F0079858D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D68C2FE6EA2F0079858D /* SceneDelegate.swift */; };
+		5939D6982FE6EA2F0079858D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D68E2FE6EA2F0079858D /* ViewController.swift */; };
+		5939D69D2FE6EDE40079858D /* TeaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D69C2FE6EDE40079858D /* TeaManager.swift */; };
+		5939D69F2FE6EEB10079858D /* TeaDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D69E2FE6EEB10079858D /* TeaDataManager.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5939D5B42FE073330079858D /* Exam37Lesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exam37Lesson.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5939D6852FE6EA2F0079858D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5939D6862FE6EA2F0079858D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5939D6872FE6EA2F0079858D /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
+		5939D6882FE6EA2F0079858D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5939D6892FE6EA2F0079858D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5939D68B2FE6EA2F0079858D /* NestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTypes.swift; sourceTree = "<group>"; };
+		5939D68C2FE6EA2F0079858D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5939D68E2FE6EA2F0079858D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5939D69C2FE6EDE40079858D /* TeaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaManager.swift; sourceTree = "<group>"; };
+		5939D69E2FE6EEB10079858D /* TeaDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		5939D5C62FE073350079858D /* Exceptions for "Exam37Lesson" folder in "Exam37Lesson" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 5939D5B32FE073330079858D /* Exam37Lesson */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		5939D5B62FE073330079858D /* Exam37Lesson */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				5939D5C62FE073350079858D /* Exceptions for "Exam37Lesson" folder in "Exam37Lesson" target */,
-			);
-			path = Exam37Lesson;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5939D5B12FE073330079858D /* Frameworks */ = {
@@ -45,7 +46,7 @@
 		5939D5AB2FE073330079858D = {
 			isa = PBXGroup;
 			children = (
-				5939D5B62FE073330079858D /* Exam37Lesson */,
+				5939D68F2FE6EA2F0079858D /* Exam37Lesson */,
 				5939D5B52FE073330079858D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +57,47 @@
 				5939D5B42FE073330079858D /* Exam37Lesson.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5939D68F2FE6EA2F0079858D /* Exam37Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				5939D69A2FE6EA780079858D /* Resources */,
+				5939D69B2FE6EA9E0079858D /* CustomElements */,
+				5939D6992FE6EA3A0079858D /* Services */,
+				5939D68E2FE6EA2F0079858D /* ViewController.swift */,
+				5939D6852FE6EA2F0079858D /* AppDelegate.swift */,
+				5939D68C2FE6EA2F0079858D /* SceneDelegate.swift */,
+			);
+			path = Exam37Lesson;
+			sourceTree = "<group>";
+		};
+		5939D6992FE6EA3A0079858D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5939D68B2FE6EA2F0079858D /* NestedTypes.swift */,
+				5939D69C2FE6EDE40079858D /* TeaManager.swift */,
+				5939D69E2FE6EEB10079858D /* TeaDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5939D69A2FE6EA780079858D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5939D6862FE6EA2F0079858D /* Assets.xcassets */,
+				5939D68A2FE6EA2F0079858D /* LaunchScreen.storyboard */,
+				5939D6882FE6EA2F0079858D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5939D69B2FE6EA9E0079858D /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				5939D6872FE6EA2F0079858D /* HorizontalScrollView.swift */,
+			);
+			path = CustomElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +114,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				5939D5B62FE073330079858D /* Exam37Lesson */,
 			);
 			name = Exam37Lesson;
 			packageProductDependencies = (
@@ -122,6 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5939D6902FE6EA2F0079858D /* Assets.xcassets in Resources */,
+				5939D6922FE6EA2F0079858D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +173,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5939D69F2FE6EEB10079858D /* TeaDataManager.swift in Sources */,
+				5939D6932FE6EA2F0079858D /* AppDelegate.swift in Sources */,
+				5939D6942FE6EA2F0079858D /* HorizontalScrollView.swift in Sources */,
+				5939D69D2FE6EDE40079858D /* TeaManager.swift in Sources */,
+				5939D6952FE6EA2F0079858D /* NestedTypes.swift in Sources */,
+				5939D6962FE6EA2F0079858D /* SceneDelegate.swift in Sources */,
+				5939D6982FE6EA2F0079858D /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5939D68A2FE6EA2F0079858D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5939D6892FE6EA2F0079858D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5939D5C82FE073350079858D /* Debug */ = {
