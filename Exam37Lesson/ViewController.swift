@@ -10,10 +10,13 @@ import UIKit
 class ViewController: UITableViewController {
     
     var teaManager: ITeaManager!
+    
+    private let cellIdentifier = "cellIdentifier"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .cyan
+        tableView.register(<#T##nib: UINib?##UINib?#>, forCellReuseIdentifier: cellIdentifier)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

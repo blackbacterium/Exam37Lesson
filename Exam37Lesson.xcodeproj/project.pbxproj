@@ -16,6 +16,8 @@
 		5939D6982FE6EA2F0079858D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D68E2FE6EA2F0079858D /* ViewController.swift */; };
 		5939D69D2FE6EDE40079858D /* TeaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D69C2FE6EDE40079858D /* TeaManager.swift */; };
 		5939D69F2FE6EEB10079858D /* TeaDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D69E2FE6EEB10079858D /* TeaDataManager.swift */; };
+		5939D6C02FE6FC360079858D /* TeaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D6BF2FE6FC360079858D /* TeaCell.swift */; };
+		5939D6C22FE7002F0079858D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939D6C12FE7002F0079858D /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5939D68E2FE6EA2F0079858D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5939D69C2FE6EDE40079858D /* TeaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaManager.swift; sourceTree = "<group>"; };
 		5939D69E2FE6EEB10079858D /* TeaDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaDataManager.swift; sourceTree = "<group>"; };
+		5939D6BF2FE6FC360079858D /* TeaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaCell.swift; sourceTree = "<group>"; };
+		5939D6C12FE7002F0079858D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				5939D6872FE6EA2F0079858D /* HorizontalScrollView.swift */,
+				5939D6C12FE7002F0079858D /* CustomView.swift */,
+				5939D6BF2FE6FC360079858D /* TeaCell.swift */,
 			);
 			path = CustomElements;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			files = (
 				5939D69F2FE6EEB10079858D /* TeaDataManager.swift in Sources */,
 				5939D6932FE6EA2F0079858D /* AppDelegate.swift in Sources */,
+				5939D6C02FE6FC360079858D /* TeaCell.swift in Sources */,
+				5939D6C22FE7002F0079858D /* CustomView.swift in Sources */,
 				5939D6942FE6EA2F0079858D /* HorizontalScrollView.swift in Sources */,
 				5939D69D2FE6EDE40079858D /* TeaManager.swift in Sources */,
 				5939D6952FE6EA2F0079858D /* NestedTypes.swift in Sources */,
