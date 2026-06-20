@@ -33,10 +33,13 @@ extension CustomView {
         titleLabel.text = tea.nameTea
         descriptionLabel.text = tea.teaDetail
         imageTea.image = UIImage(named: tea.nameTea)
+        
+        widthAnchor.constraint(equalToConstant: 320).isActive = true
+//        heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
     func setup() {
-        backgroundColor = UIColor(cgColor: CGColor(red: 230/255, green: 230/255, blue: 250/255, alpha: 1))
+        backgroundColor = UIColor(cgColor: CGColor(red: 234/255, green: 255/255, blue: 234/255, alpha: 1))
         layer.cornerRadius = 20
         
         layer.shadowColor = UIColor.black.cgColor
@@ -69,8 +72,8 @@ extension CustomView {
     }
     
     func setupImageTea() {
-        imageTea.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        imageTea.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        imageTea.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        imageTea.heightAnchor.constraint(equalToConstant: 120).isActive = true
         imageTea.contentMode = .scaleAspectFill
         imageTea.layer.cornerRadius = 12
         imageTea.clipsToBounds = true
@@ -90,15 +93,14 @@ extension CustomView {
         NSLayoutConstraint.activate([
             imageTea.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             imageTea.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+            imageTea.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
             
             titleLabel.leadingAnchor.constraint(equalTo: imageTea.trailingAnchor, constant: 16),
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             
-            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 40),
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 25),
             descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            descriptionLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
-            
+            descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)
         ])
     }
 }

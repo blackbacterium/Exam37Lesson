@@ -14,10 +14,19 @@ class HorizontalScrollView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupView()
+        setupLayoutScrollView()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(teas: [TeaModel]) {
+        for tea in teas {
+            let view = CustomView(tea: tea)
+            stackView.addArrangedSubview(view)
+        }
     }
 }
 
@@ -26,6 +35,8 @@ private extension HorizontalScrollView {
     func setupView() {
         scrollView.addSubview(stackView)
         addSubview(scrollView)
+        
+        setupStackView()
     }
     
     func setupStackView() {

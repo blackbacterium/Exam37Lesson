@@ -15,8 +15,8 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
-        tableView.register(<#T##nib: UINib?##UINib?#>, forCellReuseIdentifier: cellIdentifier)
+        tableView.separatorStyle = .none
+        tableView.register(TeaCell.self, forCellReuseIdentifier: cellIdentifier)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,7 +24,15 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? TeaCell else {
+            return UITableViewCell()
+        }
+        
+        let section = teaManager.getAllTeas()[indexPath.row]
+        cell.configure(teaSection: section)
+        
+        return cell
     }
 
 
