@@ -51,7 +51,7 @@ extension CustomView {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.3
         layer.shadowOffset = CGSize(width: 5, height: 5)
-        layer.shadowRadius = 10
+        layer.shadowRadius = 5
         
         addSubviews()
         setupTitleLabel()
