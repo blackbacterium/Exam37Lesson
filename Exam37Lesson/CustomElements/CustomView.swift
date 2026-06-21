@@ -8,6 +8,9 @@
 import UIKit
 
 class CustomView: UIView {
+    
+    var action: ((String) -> ())?
+    
     private let titleLabel = UILabel()
     private let descriptionLabel = UILabel()
     private let imageTea = UIImageView()
@@ -19,11 +22,15 @@ class CustomView: UIView {
         self.tea = tea
         configure(tea: tea)
         setup()
-        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        action?(tea?.nameTea ?? "")
     }
 }
 
@@ -35,7 +42,6 @@ extension CustomView {
         imageTea.image = UIImage(named: tea.nameTea)
         
         widthAnchor.constraint(equalToConstant: 320).isActive = true
-//        heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
     func setup() {
@@ -82,10 +88,9 @@ extension CustomView {
 
 //MARK: - Setup Layout
 extension CustomView {
-    
     func setupLayout() {
         [titleLabel,
-        descriptionLabel,
+         descriptionLabel,
          imageTea].forEach { view in
             view.translatesAutoresizingMaskIntoConstraints = false
         }

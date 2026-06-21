@@ -8,6 +8,9 @@
 import UIKit
 
 class TeaCell: UITableViewCell {
+    
+    var action: ((String) -> ())?
+    
     private let categoryLabel = UILabel()
     private let horizontalScroll = HorizontalScrollView()
     
@@ -23,6 +26,12 @@ class TeaCell: UITableViewCell {
     func configure(teaSection: TeaSection) {
         categoryLabel.text = teaSection.title
         horizontalScroll.configure(teas: teaSection.teas)
+        
+        horizontalScroll.action = tapView
+    }
+    
+    private func tapView(_ nameTea: String) {
+        action?(nameTea)
     }
 }
 

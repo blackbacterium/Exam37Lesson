@@ -13,12 +13,11 @@ protocol ITeaManager {
 }
 
 class TeaManager {
-    private var teas = [TeaSection]()
     
+    private var teas = [TeaSection]()
 }
 
 extension TeaManager: ITeaManager {
-    
     func addTeas(_ teas: [TeaSection]) {
         self.teas.append(contentsOf: teas)
     }

@@ -9,6 +9,8 @@ import UIKit
 
 class HorizontalScrollView: UIView {
     
+    var action: ((String) -> ())?
+    
     private let scrollView = UIScrollView()
     private let stackView = UIStackView()
     
@@ -25,8 +27,13 @@ class HorizontalScrollView: UIView {
     func configure(teas: [TeaModel]) {
         for tea in teas {
             let view = CustomView(tea: tea)
+            view.action = tapView
             stackView.addArrangedSubview(view)
         }
+    }
+    
+    private func tapView(_ nameTea: String) {
+        action?(nameTea)
     }
 }
 

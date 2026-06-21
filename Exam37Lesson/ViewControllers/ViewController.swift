@@ -12,7 +12,7 @@ class ViewController: UITableViewController {
     var teaManager: ITeaManager!
     
     private let cellIdentifier = "cellIdentifier"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
@@ -30,11 +30,30 @@ class ViewController: UITableViewController {
         }
         
         let section = teaManager.getAllTeas()[indexPath.row]
+        
         cell.configure(teaSection: section)
+        cell.action = presentDetailsVC
         
         return cell
     }
-
-
+    
+    private func presentDetailsVC(_ teaName: String) {
+        guard let tea = getTea(teaName: teaName) else { return }
+        let detailsVC = DetailsViewController()
+        detailsVC.configure(tea: tea)
+        
+        present(detailsVC, animated: true)
+    }
+    
+    private func getTea(teaName: String) -> TeaModel? {
+        for section in teaManager.getAllTeas() {
+            for tea in section.teas {
+                if tea.nameTea == teaName {
+                    return tea
+                }
+            }
+        }
+        return nil
+    }
 }
 

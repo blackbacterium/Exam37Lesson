@@ -12,6 +12,7 @@ protocol ITeaDataManager {
 }
 
 class TeaDataManager: ITeaDataManager {
+    
     func getTeas() -> [TeaSection] {
         [
             TeaSection(title: "Зелёные чаи",
