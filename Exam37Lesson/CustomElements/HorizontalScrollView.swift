@@ -25,6 +25,11 @@ class HorizontalScrollView: UIView {
     }
     
     func configure(teas: [TeaModel]) {
+        stackView.arrangedSubviews.forEach {
+            stackView.removeArrangedSubview($0)
+            $0.removeFromSuperview()
+        }
+        
         for tea in teas {
             let view = CustomView(tea: tea)
             view.action = tapView
